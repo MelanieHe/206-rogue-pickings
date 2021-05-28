@@ -1,0 +1,254 @@
+html {
+	font-size: 16px;
+}
+
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	max-width: 1200px;
+	width: 90%;
+}
+
+h1,
+h2,
+h3 {
+	color: black;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 {
+	font-size: 1.875em;
+}
+h2 {
+	font-size: 1.125em;
+}
+h3 {
+	font-size: 0.75em;
+}
+
+p {
+	font-size: 0.875em;
+	line-height: 1.313em;
+}
+
+/*The widths are in a percentage!*/
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	width: 100%
+}
+
+header h1 {
+	border-bottom: 3px solid #77a466;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 0.5em;
+}
+
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
+	padding-bottom: 1.25em;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1em;
+	line-height: 2.5em;
+	list-style: none;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
+}
+
+/*The widths are in a percentage!*/
+
+.top-section,
+.bottom-section {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-flow: row wrap;
+}
+
+.main-image {
+	height: auto;
+}
+.main-image img {
+	width: 100%;
+	border-top: 3px solid #77a466;
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+}
+.main-title h2 {
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+.section-one,
+.section-two,
+.section-three {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-flow: row wrap;
+	width: 100%;
+	height: auto;
+	border-top: 1px solid #eee;
+	padding-left: 0;
+}
+
+h3 {
+	width: 100%;
+}
+
+.menu {
+	list-style: none;
+	padding-left: 0;
+}
+
+.menu li {
+	color:#77a466;
+	width: 100%;
+	padding-bottom: 1.5em;
+}
+
+.reviews {
+	color: #333;
+	font-size: 1em;
+	line-height: 1.3em;
+}
+
+.adress {
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+
+/*The widths are in a percentage!*/
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+	border-top: 1px solid #eee;
+	font-size: 0.7em;
+	text-align: center;
+	width: 100%;
+}
+
+footer span {
+	font-family: 'Galada', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 0.8em;
+}
+
+
+/*----- TABLET LANDSCAPE -----*/
+
+@media (min-width: 768px) {
+	nav li {
+		display: inline-block;
+		padding: 0 2em;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-flow: row wrap;
+		flex-grow: 1;
+		width: 33.33%;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+
+	.section-one {
+		padding-left: 0;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+	}
+
+	.menu,
+	.reviews,
+	.contact {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-flow: row wrap;
+		font-size: 1em;
+	}
+
+	h3 {
+		font-size: 1em;
+		width: 100%;
+	}
+
+	footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row wrap;
+		font-size: 1.125em;
+		text-align: center;
+		width: 100%;
+	}
+
+	footer span {
+		font-size: 1em;
+	}
+}
+
+/*----- DESKTOP -----*/
+
+@media (min-width: 1200px) {
+	header h1 {
+		width: 30%;
+		text-align: left;
+		border: none;
+		padding-top: 0.5em;
+	}
+
+	nav {
+		width: 70%;
+		text-align: right;
+		padding-top: 1.25em;
+	}
+
+	nav li {
+		padding: 0 1em;
+	}
+}
