@@ -177,7 +177,7 @@ footer span {
 @media (min-width: 768px) {
 	nav li {
 		display: inline-block;
-		padding: 0 2em;
+		padding: 0 1em;
 	}
 
 	.section-one,
@@ -246,9 +246,5 @@ footer span {
 		width: 70%;
 		text-align: right;
 		padding-top: 1.25em;
-	}
-
-	nav li {
-		padding: 0 1em;
 	}
 }
